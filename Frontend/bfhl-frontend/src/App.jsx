@@ -18,7 +18,7 @@ function App() {
     try {
       // Validate input as JSON
       const jsonData = JSON.parse(inputJSON);
-      const response = await axios.post('http://localhost:3000/bfhl', { data: jsonData.data });
+      const response = await axios.post('https://bajajfinserv-1-acfo.onrender.com/bfhl', { data: jsonData.data });
       setResponseData(response.data);
       setLoading(false);
     } catch (err) {
