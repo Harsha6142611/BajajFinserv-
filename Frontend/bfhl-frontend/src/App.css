@@ -1,0 +1,116 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2c3e50; /* Dark background */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  background-color: #ecf0f1; /* Light background for content area */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 100%;
+  max-width: 600px; /* Maximum width */
+  text-align: center;
+}
+
+h1 {
+  color: #34495e; /* Darker text color */
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%; /* Full width for responsiveness */
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #95a5a6;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+  resize: none;
+  background-color: #fff; /* White background for input */
+  color: #2c3e50; /* Dark text color */
+}
+
+button {
+  background-color: #000; /* Black background for button */
+  color: rgb(19, 75, 1);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #048f40; /* Darker black on hover */
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #95a5a6;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 20px 0;
+  background-color: #fff;
+  color: #2c3e50;
+}
+
+h3, h2 {
+  color: #34495e;
+}
+
+pre {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #95a5a6;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #2c3e50;
+}
+
+.error {
+  color: #e74c3c; /* Red for error messages */
+  margin-top: 20px;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+    width: 90%; /* Take up more of the screen on smaller devices */
+  }
+
+  textarea {
+    height: 120px; /* Adjust textarea height */
+  }
+
+  button {
+    width: 100%; /* Full-width button on smaller screens */
+    padding: 15px;
+  }
+
+  select {
+    width: 100%; /* Full-width select on smaller screens */
+  }
+
+  pre {
+    width: 100%;
+  }
+}
